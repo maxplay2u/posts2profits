@@ -250,6 +250,7 @@ footer .disc{font-size:14px;line-height:1.6;max-width:70em}
 .fx .reveal{opacity:0;transform:translateY(12px);transition:opacity .45s ease,transform .45s ease-out}
 .fx .reveal.in{opacity:1;transform:none}
 .chapterbuy{display:flex;flex-direction:column;align-items:flex-start;gap:10px}.chapterbuy .note{font-size:15px;color:var(--muted)}
+.cantwait{text-align:center;margin:22px 0 0;font-size:17px;color:var(--muted)}.cantwait a{color:var(--gold-ink);font-weight:600;text-decoration:underline;text-underline-offset:3px}
 </style>
 </head>
 <body>
@@ -365,7 +366,7 @@ footer .disc{font-size:14px;line-height:1.6;max-width:70em}
     <div class="wrap">
       <div class="head center"><h2>Get your copy.</h2></div>
 <div class="stack panel"><div class="eyebrow">Everything inside</div><ul>
-<li>The book: 5 phases, 96 pages</li><li>10 &ldquo;deeper and different&rdquo; comment scripts</li><li>3 case study templates and 4 ways to close</li><li>30 post prompts</li><li>The Perception Mirror and the Uncopyable Content Map</li><li>A 7-day quick start and a 30-day tracker</li><li>Free toolkit: 30 ready-to-post captions, a profile scorecard and 50 more comments</li></ul>
+<li>The book: 5 phases, 100 pages</li><li>10 &ldquo;deeper and different&rdquo; comment scripts</li><li>3 case study templates and 4 ways to close</li><li>30 post prompts</li><li>The Perception Mirror and the Uncopyable Content Map</li><li>A 7-day quick start and a 30-day tracker</li><li>Free toolkit: 30 ready-to-post captions, a profile scorecard and 50 more comments</li></ul>
 <p class="contrast">One new client is worth more than this book a hundred times over.</p></div>
       <div class="cards">
         <div class="card">
@@ -378,15 +379,16 @@ footer .disc{font-size:14px;line-height:1.6;max-width:70em}
           <div class="g">Instant download, yours to keep</div>
         </div>
         <div class="card">
-          <span class="pop pop-gold">MADE TO KEEP</span>
+          <span class="pop pop-gold">COMING SOON</span>
           <h3>Paperback</h3>
           <div class="price">$24.99<small>+ shipping</small></div>
-          <div class="line">Made to be read with a pen in hand.</div>
+          <div class="line">Be first in line when it ships.</div>
           <ul><li>Full color, 6 &times; 9 inches</li><li>Shipped straight to your door</li><li>Room to mark up your plan</li><li>Free bonus toolkit included</li></ul>
-          <a class="btn btn-black" data-buy="paperback" href="#formats">Get the Paperback</a>
-          <div class="g">14-day money-back guarantee</div>
+          <a class="btn btn-black" data-buy="early" href="#formats">Join the Early List</a>
+          <div class="g">Read Chapter 1 free today. Early list gets launch-day pricing.</div>
         </div>
       </div>
+      <p class="cantwait">Can&rsquo;t wait? <a data-buy="ebook" href="#formats">Start with the ebook today.</a></p>
       <div class="trust"><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Secure checkout. All major cards accepted.</div>
     </div>
   </section>
@@ -394,7 +396,7 @@ footer .disc{font-size:14px;line-height:1.6;max-width:70em}
 
   <section class="faq" style="padding-top:20px">
     <div class="wrap">
-      <details><summary>Which format should I get?</summary><p>If you want to start today, get the ebook. If you like to write in your books and keep them close, get the paperback. Both include the free bonus toolkit.</p></details>
+      <details><summary>Which format should I get?</summary><p>If you want to start today, get the ebook. If you like to write in your books and keep them close, the paperback is coming soon. Join the early list and you&rsquo;ll be first to know. Both include the free bonus toolkit.</p></details>
       <details><summary>I&rsquo;m not on Facebook. Will this still work?</summary><p>Yes. The book explains why it recommends starting with Facebook, but the five phases work on any platform, including Instagram, LinkedIn, TikTok and YouTube.</p></details>
       <details><summary>I&rsquo;m a complete beginner. Is this for me?</summary><p>Yes. You get a 7-day plan to start and three levels to choose from, so you begin exactly where you are.</p></details>
       <details><summary>What if it isn&rsquo;t for me?</summary><p>The paperback comes with a 14-day money-back guarantee. Email <span class="sel">max@thebrandbodyguard.com</span> within 14 days of delivery for a full refund. The ebook and Toolkit are delivered instantly, so digital sales are final. If a file ever won&rsquo;t open, reply to your receipt email and a working copy will be sent to you.</p></details>
@@ -407,7 +409,7 @@ footer .disc{font-size:14px;line-height:1.6;max-width:70em}
       <h2>The right people are already looking. Make sure they find you.</h2>
       <div class="buy">
         <a class="btn btn-gold" data-buy="ebook" href="#formats">Ebook &middot; $19.99</a>
-        <a class="btn btn-line" data-buy="paperback" href="#formats">Paperback &middot; $24.99</a>
+        <a class="btn btn-line" data-buy="early" href="#formats">Paperback &middot; Coming Soon</a>
       </div>
       <div class="assure"><span>14-day money-back guarantee on the paperback</span></div>
       <p class="more">Ready for posts that pay? <a data-buy="call" href="#formats">Join Next Post, Next Client</a>.</p>
@@ -463,7 +465,8 @@ footer .disc{font-size:14px;line-height:1.6;max-width:70em}
 var LINKS = {
   ebook: "https://payhip.com/b/x7NZK",       /* Payhip product link for the ebook */
   paperback: "",   /* Lulu Direct buy link for the paperback */
-  chapter: "https://payhip.com/b/3kCHT",     /* Payhip free product link for the first chapter */
+  chapter: "https://payhip.com/b/3kCHT",
+  early: "https://payhip.com/b/3kCHT",  /* Early list: free chapter until the paperback launches */     /* Payhip free product link for the first chapter */
   call: "https://posts2profits.com/nextclient",
   facebook: "https://www.facebook.com/maxjpilet",    /* your Facebook profile link */
   linkedin: "https://www.linkedin.com/in/maxjpilet"     /* your LinkedIn profile link */
