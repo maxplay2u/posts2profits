@@ -170,7 +170,7 @@ footer a{color:var(--gold-lt);text-decoration:none}
 <script>
 /* Paste the Payhip checkout link for Next Post, Next Client here. */
 var CHECKOUT = "https://payhip.com/b/ZqdH3";
-if (CHECKOUT) {
+if (CHECKOUT) { document.querySelectorAll("a.btn").forEach(function(a){ a.href = CHECKOUT; });
   document.getElementById("buy").href = CHECKOUT;
 }
 </script>
