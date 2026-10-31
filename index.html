@@ -28,6 +28,12 @@
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
+.npc{margin-top:40px;width:100%;max-width:560px;padding:36px 28px 34px;border:1px solid rgba(194,154,67,.55);border-radius:16px;background:linear-gradient(180deg,#1a160c,#100d07);text-align:center;box-shadow:0 0 60px -20px rgba(194,154,67,.35)}
+.npc-k{font:600 12px/1.4 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--gold-lt)}
+.npc-h{font:400 clamp(22px,3vw,27px)/1.3 var(--display);color:var(--on-black);margin:12px auto 0;max-width:18em;text-wrap:balance}
+.npc-n{margin:10px 0 0;font-size:15px;color:var(--on-black-muted)}
+.npc-b{margin-top:22px;border-color:var(--gold)!important;color:var(--gold-lt)!important}
+.npc-n{max-width:22em;margin-inline:auto;text-wrap:balance}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 body{margin:0;background:var(--bg);color:var(--text);font:400 18px/1.68 var(--body);-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
@@ -435,7 +441,7 @@ footer nav[aria-label="Social"] a{display:inline-flex;align-items:center;gap:7px
         <a class="btn btn-line" data-buy="early" href="#formats">Paperback &middot; Coming Soon</a>
       </div>
       <div class="assure"><span>14-day money-back guarantee on the paperback</span></div>
-      <p class="more"><span class="ml">The book is the map. Five days is the shortcut.</span><a class="mlink" data-buy="call" href="#formats">Join Next Post, Next Client</a><span class="mnote"><span>Five days.</span> <span>One focused hour a day.</span> <span>One-on-one.</span></span></p>
+      <div class="npc"><div class="npc-k">One-on-one with Max</div><p class="npc-h">The book is the map. Five days is the shortcut.</p><p class="npc-n">Each session is one focused hour, and you leave with something done.</p><a class="btn btn-line npc-b" data-buy="call" href="#formats">Join Next Post, Next Client</a></div>
     </div>
   </section>
 <section class="free" style="padding-top:20px">
